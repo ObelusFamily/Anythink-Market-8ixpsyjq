@@ -55,7 +55,7 @@ const reducer = (state = {}, action) => {
         itemsCount: action.payload.itemsCount,
         tab: null,
         tag: action.tag,
-        currentPage: 0
+        currentPage: 0,
       };
     case HOME_PAGE_LOADED:
       return {
