@@ -9,6 +9,7 @@ Please find more info about each part in the relevant Readme file ([frontend](fr
 When implementing a new feature or fixing a bug, please create a new pull request against `main` from a feature/bug branch and add `@vanessa-cooper` as reviewer.
 
 ## How to run locally?
+
 1. [Install Docker](https://docs.docker.com/get-docker/)
-2. [Install Docker Compose](https://docs.docker.com/compose/install/)
-3. Run `docker-compose up`. 
+2. Check Docker: `docker -v` / `docker-compose -v`
+3. Run `docker-compose up` (remember to open docker desktop)
