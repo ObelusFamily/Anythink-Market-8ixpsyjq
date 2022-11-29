@@ -5,7 +5,7 @@ router.use('/profiles', require('./profiles'));
 router.use('/items', require('./items'));
 router.use('/tags', require('./tags'));
 router.use('/ping', require('./ping'));
-router.use('/title', require('./title'));
+router.use('/filter', require('./filter'));
 
 router.use(function(err, req, res, next){
   if(err.name === 'ValidationError'){
