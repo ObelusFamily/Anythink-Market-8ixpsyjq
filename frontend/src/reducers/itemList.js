@@ -50,7 +50,7 @@ const reducer = (state = {}, action) => {
     case APPLY_TITLE_FILTER:
       return {
         ...state,
-        searchTitle: action.payload.searchTitle
+        searchTitle: action.payload.searchTitle,
       };
     case HOME_PAGE_LOADED:
       return {
