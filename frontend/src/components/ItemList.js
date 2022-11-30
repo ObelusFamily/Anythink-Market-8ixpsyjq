@@ -8,10 +8,15 @@ const ItemList = (props) => {
   }
 
   if (props.items?.length === 0) {
-    if (props.title?.length > 1) {
-      return <div className="py-4 no-items">No items found.</div>;
-    }
     return <div className="py-4 no-items">No items are here... yet.</div>;
+  }
+
+  if (props.searchTitle && props.searchTitle.length >= 3) {
+    props.items = props.items.filter((item) =>
+      props.item.title
+        .toLowerCase()
+        .includes(props.searchTitle.toLowerCase().trim())
+    );
   }
 
   return (
